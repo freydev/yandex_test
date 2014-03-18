@@ -1,5 +1,6 @@
 def li_concat(list_of_keys, list_of_values):
 	diff = len(list_of_keys) - len(list_of_values)
+	# дополняем список недостающими значениями
 	list_of_values += diff > 0 and [None for x in range(diff)] or []
 	return dict(zip(list_of_keys, list_of_values))
 

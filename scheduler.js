@@ -25,7 +25,7 @@ Scheduler.prototype = {
 var scheduler = new Scheduler;
 setInterval(scheduler.tick, 1000);
 
-// вариант номер три, вызвать метов из контекста объекта
+// вариант номер три, использовать обертку
 function Scheduler() {
     this._i = 0;
 }
@@ -38,5 +38,5 @@ Scheduler.prototype = {
 
 var scheduler = new Scheduler
 setInterval(function() {
-    scheduler.tick
+    scheduler.tick()
 }, 1000)

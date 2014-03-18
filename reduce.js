@@ -1,7 +1,6 @@
 var smartReduce = function(array) {
     return array.reduceRight(function(prev, curr) {
-        var obj = {};
-        obj[curr] = prev;
+        var obj = {}; obj[curr] = prev;
         return obj
     })
 }
